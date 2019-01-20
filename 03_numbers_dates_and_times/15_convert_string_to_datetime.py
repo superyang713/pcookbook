@@ -10,8 +10,9 @@ datetime.strptime will work.
 
 from datetime import datetime
 
-# Example 1: 
+# Example 1:
 text = '2012-09-20'
+
 y = datetime.strptime(text, '%Y-%m-%d')
 z = datetime.now()
 diff = z - y
@@ -21,6 +22,7 @@ print(diff)
 # need to represent a datetime object in string output and make it nice.
 nice_z = datetime.strftime(z, '%A %B %d, %Y')
 print(nice_z)
+
 
 # Example 3: strptime() is often low performance. If you need to deal with
 # a lot of dates and you know the precise format, you should use a custom
