@@ -21,6 +21,7 @@ def frange(start, stop, increment):
 for n in frange(0, 4, 0.5):
     print(n)
 
+
 # Example 2: the underlying mechanism about generator:
 def countdown(n):
     print("Starting to count from", n)
@@ -28,6 +29,7 @@ def countdown(n):
         yield n
         n -= 1
     print("Done!")
+
 
 c = countdown(3)
 print(c)
